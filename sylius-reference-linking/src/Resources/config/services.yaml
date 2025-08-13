@@ -1,0 +1,9 @@
+services:
+    Sylius\ReferenceLinking\:
+        resource: '../../*'
+        exclude: '../../{DependencyInjection,Entity,Tests}'
+    Sylius\ReferenceLinking\Controller\:
+        resource: '../../Controller'
+        tags: ['controller.service_arguments']
+    Sylius\ReferenceLinking\Twig\ReferenceUrlExtension:
+        tags: ['twig.extension']
