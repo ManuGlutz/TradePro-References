@@ -1,0 +1,11 @@
+<h1>Reference Linking Policies</h1>
+<table>
+  <tr><th>Typ</th><th>Ziel</th><th></th></tr>
+  {% for policy in policies %}
+  <tr>
+    <td>{{ policy.referenceType }}</td>
+    <td>{{ policy.targetLevel }}</td>
+    <td><a href="{{ path('app_admin_reference_linking_edit', {referenceType: policy.referenceType}) }}">Bearbeiten</a></td>
+  </tr>
+  {% endfor %}
+</table>

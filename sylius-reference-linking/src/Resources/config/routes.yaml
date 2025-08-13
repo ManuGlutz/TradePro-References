@@ -1,0 +1,3 @@
+reference_linking:
+    resource: '../../src/Controller/'
+    type: attribute
